@@ -25,13 +25,13 @@ License Link : https://github.com/TEAM-PYRO-BOTZ/PYRO-RENAME-BOT/blob/main/LICEN
 
 
 class mr(object):
-    PROGRESS_BAR = """\n
-╭━━━━❰ᴘʀᴏɢʀᴇss ʙᴀʀ❱━➣
+    PROGRESS_BAR = """<b>\n
+ᴄʀᴀᴢʏ ᴩʀᴏɢʀᴇꜱꜱ
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
 ┣⪼ ⏱️ : {4}
-╰━━━━━━━━━━━━━━━➣ """
+╰━━━━━━━━━━━━━━━➣</b>"""
 
     ABOUT_TXT = """
 **╭───────────⍟**
