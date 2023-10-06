@@ -57,7 +57,17 @@ class mr(object):
 
 #⚠️ don't remove our credits 🙏😢😢
     DEV_TXT = """
-"<b><u>ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ & ᴅᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u> \n
-**» ᴄᴏɴᴛᴀᴄᴛ : <a href=https://t.me/CrazyXBoTsBot>ᴄʟɪᴄᴋ ʜᴇʀᴇ**</a>
+<b><u>ꜱᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋꜱ & ᴅᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u>
+
+**🏷 ᴘʟᴀɴ :- Diamond 💎**
+
+**⌾ ᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ :- Unlimited**
+**⌾ ᴛɪᴍᴇ ɢᴀᴘ :- 0 minutes**
+**⌾ 4ɢʙ sᴜᴘᴘᴏʀᴛ :- True**
+**⌾ ᴘᴀʀᴀʟʟᴇʟ ᴘʀᴏᴄᴇss :- No Limit**
+**⌾ ᴠᴀʟɪᴅɪᴛʏ :- 30 Days**
+**⌾ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ :- @KicchaFanMaHi**
+
+**» ᴄᴏɴᴛᴀᴄᴛ : <a href=https://t.me/KicchaFanMaHi>ᴄʟɪᴄᴋ ʜᴇʀᴇ**</a>
 **» ᴜᴩᴅᴀᴛᴇꜱ : <a href=https://t.me/CrazyXBoTs>ᴄʟɪᴄᴋ ʜᴇʀᴇ**</a>
 """
