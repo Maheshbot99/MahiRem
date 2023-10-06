@@ -37,7 +37,7 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hai {user.mention} \n𝙸'𝚖 𝙰 𝚂𝚒𝚖𝚙𝚕𝚎 𝙵𝚒𝚕𝚎 𝚁𝚎𝚗𝚊𝚖𝚎+𝙵𝚒𝚕𝚎 𝚃𝚘 𝚅𝚒𝚍𝚎𝚘 𝙲𝚘𝚟𝚎𝚛𝚝𝚎𝚛 𝙱𝙾𝚃 𝚆𝚒𝚝𝚑 𝙿𝚎𝚛𝚖𝚊𝚗𝚎𝚗𝚝 𝚃𝚑𝚞𝚖𝚋𝚗𝚊𝚒𝚕 & 𝙲𝚞𝚜𝚝𝚘𝚖 𝙲𝚊𝚙𝚝𝚒𝚘𝚗 𝚂𝚞𝚙𝚙𝚘𝚛𝚝!"
+    txt=f"**ʜᴇʟʟᴏ -  {user.mention}  👋,</b> \nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.</b> \n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!</b>**"
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton("• ᴅᴇᴠꜱ •", callback_data='dev')
         ],[
@@ -67,16 +67,16 @@ async def rename_start(client, message):
     filesize = humanize.naturalsize(file.file_size) 
     fileid = file.file_id
     try:
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename"),
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        text = f"""**__𝑊ℎ𝑎𝑡 𝑑𝑜 𝑦𝑜𝑢 𝑤𝑎𝑛𝑡 𝑚𝑒 𝑡𝑜 𝑑𝑜 𝑤𝑖𝑡ℎ 𝑡ℎ𝑖𝑠 𝑓𝑖𝑙𝑒...?__**\n\n**__𝑂𝑙𝑑 𝐹𝑖𝑙𝑒𝑁𝑎𝑚𝑒__** - `{filename}`\n\n**__𝐹𝑖𝑙𝑒 𝑆𝑖𝑧𝑒__** - `{filesize}`"""
+        buttons = [[ InlineKeyboardButton("✍  ʀᴇɴᴀᴍᴇ", callback_data="rename"),
+                   [ InlineKeyboardButton("✖️ ᴄᴀɴᴄᴇʟ", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
         await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.value)
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename"),
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        text = f"""**__𝑊ℎ𝑎𝑡 𝑑𝑜 𝑦𝑜𝑢 𝑤𝑎𝑛𝑡 𝑚𝑒 𝑡𝑜 𝑑𝑜 𝑤𝑖𝑡ℎ 𝑡ℎ𝑖𝑠 𝑓𝑖𝑙𝑒...?__**\n\n**__𝑂𝑙𝑑 𝐹𝑖𝑙𝑒𝑁𝑎𝑚𝑒__** - `{filename}`\n\n**__𝐹𝑖𝑙𝑒 𝑆𝑖𝑧𝑒__** - `{filesize}`"""
+        buttons = [[ InlineKeyboardButton("✍  ʀᴇɴᴀᴍᴇ", callback_data="rename"),
+                   [ InlineKeyboardButton("✖️ ᴄᴀɴᴄᴇʟ", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
     except:
         pass
