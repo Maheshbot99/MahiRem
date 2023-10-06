@@ -67,16 +67,16 @@ async def rename_start(client, message):
     filesize = humanize.naturalsize(file.file_size) 
     fileid = file.file_id
     try:
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        text = f"""**__𝑊ℎ𝑎𝑡 𝑑𝑜 𝑦𝑜𝑢 𝑤𝑎𝑛𝑡 𝑚𝑒 𝑡𝑜 𝑑𝑜 𝑤𝑖𝑡ℎ 𝑡ℎ𝑖𝑠 𝑓𝑖𝑙𝑒...?__**\n\n**__𝑂𝑙𝑑 𝐹𝑖𝑙𝑒𝑁𝑎𝑚𝑒__** - `{filename}`\n\n**__𝐹𝑖𝑙𝑒 𝑆𝑖𝑧𝑒__** - `{filesize}`"""
+        buttons = [[ InlineKeyboardButton("✍  ʀᴇɴᴀᴍᴇ", callback_data="rename") ],
+                   [ InlineKeyboardButton("✖️ ᴄᴀɴᴄᴇʟ", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
         await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.value)
-        text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        text = f"""**__𝑊ℎ𝑎𝑡 𝑑𝑜 𝑦𝑜𝑢 𝑤𝑎𝑛𝑡 𝑚𝑒 𝑡𝑜 𝑑𝑜 𝑤𝑖𝑡ℎ 𝑡ℎ𝑖𝑠 𝑓𝑖𝑙𝑒...?__**\n\n**__𝑂𝑙𝑑 𝐹𝑖𝑙𝑒𝑁𝑎𝑚𝑒__** - `{filename}`\n\n**__𝐹𝑖𝑙𝑒 𝑆𝑖𝑧𝑒__** - `{filesize}`"""
+        buttons = [[ InlineKeyboardButton("✍  ʀᴇɴᴀᴍᴇ", callback_data="rename") ],
+                   [ InlineKeyboardButton("✖️ ᴄᴀɴᴄᴇʟ", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
     except:
         pass
