@@ -39,7 +39,7 @@ async def start(client, message):
         await db.add_user(user.id)             
     txt=f"**ʜᴇʟʟᴏ -  {user.mention}  👋,** \n**ɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.** \n\n**ᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!**"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton("💳 ᴜᴩɢʀᴀᴅᴇ", callback_data='dev')
+        InlineKeyboardButton("ᴜᴩɢʀᴀᴅᴇ", callback_data='dev')
         ],[
         InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/CrazyXBoTs'),
         InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/CrazyXBoTsBot')
@@ -88,7 +88,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""**ʜᴇʟʟᴏ -  {query.from_user.mention}  👋,** \n**ɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ.** \n\n**ᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!**""",
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(💳 ᴜᴩɢʀᴀᴅᴇ", callback_data='dev')                
+                InlineKeyboardButton("ᴜᴩɢʀᴀᴅᴇ", callback_data='dev')                
                 ],[
                 InlineKeyboardButton('ᴜᴩᴅᴀᴛᴇꜱ', url='https://t.me/CrazyXBoTs'),
                 InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ', url='https://t.me/CrazyXBoTsBot')
